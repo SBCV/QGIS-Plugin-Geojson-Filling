@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/geojson_filling" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
