@@ -309,6 +309,10 @@ class GeojsonFiller:
             layer_fields = layer.fields()
             fill_index = layer_fields.indexFromName(self.fill_attribute_name)
 
+            # Skip processing, if attribute does not exist
+            if fill_index < 0:
+                continue
+
             single_symbol_renderer = layer.renderer()
             symbol = single_symbol_renderer.symbol()
             symbol_layer = symbol.symbolLayers()[0]
