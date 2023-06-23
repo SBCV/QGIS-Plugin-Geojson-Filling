@@ -146,21 +146,5 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>selected_layer_flag</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>fill_attribute_name</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>249</x>
-     <y>78</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>267</x>
-     <y>127</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
 </ui>
