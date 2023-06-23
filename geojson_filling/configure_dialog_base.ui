@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
-    <height>178</height>
+    <width>390</width>
+    <height>133</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,48 +27,35 @@
    <enum>Qt::DefaultContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>Configure Plugin reloader</string>
+   <string>Configure Geojson Filling</string>
   </property>
   <property name="whatsThis">
    <string/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Define the attribute name used to fill the vector layers</string>
+     </property>
+    </widget>
+   </item>
    <item row="3" column="0">
     <layout class="QGridLayout" name="gridLayout_2">
      <property name="bottomMargin">
       <number>6</number>
      </property>
      <item row="0" column="0">
-      <spacer name="horizontal_spacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Fixed</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>30</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPlainTextEdit" name="fill_attribute_name">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QGIS will try to execute any commands typed here in a shell before reloading the plugin.&lt;/p&gt;
-&lt;p&gt;This can be useful, for example, if you need to copy the new source code into the QGIS plugins directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-       <property name="plainText">
-        <string>fill</string>
-       </property>
-      </widget>
+      <widget class="QLineEdit" name="fill_attribute_name"/>
      </item>
     </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QCheckBox" name="selected_layer_flag">
+     <property name="text">
+      <string>Apply the filling only to selected layers</string>
+     </property>
+    </widget>
    </item>
    <item row="5" column="0">
     <widget class="QDialogButtonBox" name="buttonBox">
@@ -83,35 +70,8 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Define the attribute name used to fill the vector layers</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QCheckBox" name="selected_layer_flag">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="toolTip">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QGIS will try to execute any commands typed here in a shell before reloading the plugin.&lt;/p&gt;
-&lt;p&gt;This can be useful, for example, if you need to copy the new source code into the QGIS plugins directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="text">
-      <string>Apply the filling only to selected layers</string>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>fill_attribute_name</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>

@@ -362,7 +362,7 @@ class GeojsonFiller:
                 configure_dialog.selected_layer_flag.isChecked()
             )
             self.fill_attribute_name = (
-                configure_dialog.fill_attribute_name.toPlainText()
+                configure_dialog.fill_attribute_name.text()
             )
 
 
@@ -372,6 +372,6 @@ class ConfigureDialog(QDialog, ConfigureDialogBase):
         self.iface = fix_fill_color.iface
         self.setupUi(self)
         self.selected_layer_flag.setChecked(fix_fill_color.selected_layer_flag)
-        self.fill_attribute_name.setPlainText(
+        self.fill_attribute_name.setText(
             fix_fill_color.fill_attribute_name
         )
