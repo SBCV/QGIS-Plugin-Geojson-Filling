@@ -1,11 +1,13 @@
 # QGIS-Plugin-Geojson-Filling
 
-Adds a button which modifies the render properties of each (selected) geojson
-layer. Instead of the default rendering option the "fill" property of each
-layer is used to display the layer.
+Motivation: When opening a geojson file in QGIS, a random color is assigned.
+While it is possible to use specific geojson properties to replace the default
+(random) color, this becomes a tedious for large number of files.
 
+This plugin allows to set the color of a set of geojson files with a single
+click.
 
-## Installation
+## Installation from Source
 * cd `QGIS-Plugin-Geojson-Filling/geojson_filling`
 * install `pb_tool` with `pip install pb_tool`
 * Run `pb_tool zip` which creates
@@ -22,9 +24,13 @@ layer is used to display the layer.
   <img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" />
 
 ## Usage
-The plugin uses available color `properties` of the `geojson` file to correctly
-visualize the geojson feature in QGIS. By default, it is looking for a property
-named `fill` as shown in the example below.
+The plugin adds a button which allows to modify the rendering of all (or all
+selected) vector layers (i.e. the loaded geojson files) in the current QGIS
+session. Instead of the default random color, a specific property of each
+geojson file is used for rendering the corresponding layer.
+
+By default, the plugin is looking for a property named `fill` as shown in the
+example below.
 
 ```json
 {
