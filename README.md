@@ -73,5 +73,9 @@ property name.
 By default, the filling operation is limited to the current layer selection.
 This behavior can be changed in the configuration dialog shown above.
 
+## Examples
+Two example files are provided under `examples/cars.json` and
+`examples/single_car.json`.
+
 ## Plugin Development
 Instruction for plugin development are provided [here](doc/plugin_development.md).
