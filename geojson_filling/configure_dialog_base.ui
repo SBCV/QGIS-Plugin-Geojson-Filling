@@ -36,7 +36,7 @@
    <item row="0" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Define the attribute name used to fill the vector layers</string>
+      <string>Define the property name used to fill the vector layers</string>
      </property>
     </widget>
    </item>
