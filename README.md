@@ -22,7 +22,56 @@ layer is used to display the layer.
   <img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" />
 
 ## Usage
-<img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" width="48%" />
+The plugin uses available color `properties` of the `geojson` file to correctly
+visualize the geojson feature in QGIS. By default, it is looking for a property
+named `fill` as shown in the example below.
+
+```json
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            13.036073975554306,
+                            52.39652411784479
+                        ],
+                        [
+                            13.03608716557477,
+                            52.39651801475642
+                        ],
+                        [
+                            13.036073975554306,
+                            52.39652411784479
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "fill": "#ffff00",
+                "fill-opacity": 0.5
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
+```
+
+The name of the property may be changed using the plugin options (by clicking
+on the small arrow on the right side of the icon).
+
+<img src="doc/images/plugin_options_rectangle_red.png"/>
+
+Clicking on `Configure` opens the following dialog which allows to change the
+property name.
+
+<img src="doc/images/configure_dialog.png"/>
+
+By default, the filling operation is limited to the current layer selection.
+This behavior can be changed in the configuration dialog shown above.
 
 ## Plugin Development
 Instruction for plugin development are provided [here](doc/plugin_development.md).
