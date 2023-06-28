@@ -17,6 +17,12 @@ layer is used to display the layer.
 ```
 * In `QGIS` go to `Plugins/Manage and Install Plugins ...`, click on
   `Install from ZIP`, and select `QGIS-Plugin-Geojson-Filling/geojson_filling/zip_build/geojson_filling.zip`.
+* Afterwards you find the plugin in one of the top toolbars of QGIS - see the
+  red rectangle in the image below.
+  <img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" />
+
+## Usage
+<img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" width="48%" />
 
 ## Plugin Development
 Instruction for plugin development are provided [here](doc/plugin_development.md).
