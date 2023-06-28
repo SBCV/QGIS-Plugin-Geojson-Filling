@@ -1,4 +1,4 @@
-# Blender-Addon-Photogrammetry-Importer
+# QGIS-Plugin-Geojson-Filling
 
 Adds a button which modifies the render properties of each (selected) geojson
 layer. Instead of the default rendering option the "fill" property of each
