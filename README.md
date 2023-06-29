@@ -7,6 +7,15 @@ While it is possible to use specific geojson properties to replace the default
 This plugin allows to set the color of a set of geojson files with a single
 click.
 
+
+## Installation from Release
+* Download a release [here](https://github.com/SBCV/QGIS-Plugin-Geojson-Filling/releases) (`geojson_filling.zip`).
+* In `QGIS` go to `Plugins/Manage and Install Plugins ...`, click on
+  `Install from ZIP`, and select the `geojson_filling.zip` file.
+* Afterwards you find the plugin in one of the top toolbars of QGIS - see the
+  red rectangle in the image below.
+  <img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" />
+
 ## Installation from Source
 * cd `QGIS-Plugin-Geojson-Filling/geojson_filling`
 * install `pb_tool` with `pip install pb_tool`
@@ -17,11 +26,7 @@ click.
 │   ├── geojson_filling.zip
 │   ├── !README.txt
 ```
-* In `QGIS` go to `Plugins/Manage and Install Plugins ...`, click on
-  `Install from ZIP`, and select `QGIS-Plugin-Geojson-Filling/geojson_filling/zip_build/geojson_filling.zip`.
-* Afterwards you find the plugin in one of the top toolbars of QGIS - see the
-  red rectangle in the image below.
-  <img src="doc/images/qgis_toolbar_plugin_rectangle_red.png" />
+* Activate the plugin in QGIS as shown above (see `Installation from Release`)
 
 ## Usage
 The plugin adds a button which allows to modify the rendering of all (or all
